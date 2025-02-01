@@ -1,0 +1,515 @@
+
+.grid-container {
+    display: grid;
+    grid-template-areas:
+        "header header header"
+        "sidebar main extra"
+        "footer footer footer";
+    grid-template-columns: 250px 1fr 10vh; /* Sidebar, main content, extra space */
+    grid-template-rows: auto 1fr auto; /* Header, content, footer */
+    height: 100vh; /* Full viewport height */
+    gap: 1rem; /* Spacing between grid sections */
+    
+}
+
+
+body {
+    background: linear-gradient(to right, #343a8e, #1d266b); /* Set the page background to black */
+    color: white; /* Set text color to white for contrast */
+
+}
+
+/* Header styles */
+.header {
+    display: flex;
+    grid-area: header;
+    position: relative;
+    background: linear-gradient(to right, #44095e, #0b6aa9);
+    color: white;
+    text-align: center;
+    justify-content: center;
+    padding: 10rem;
+    height: 35%;
+   
+}
+
+.header h1 {
+    position: relative;
+    font-size: 3.5rem; /* Adjust as needed */
+    font-weight: bold; /* Optional: Emphasize the text */
+    text-align: center; /* Optional: Align the text */
+    top: -150px;
+    text-shadow: 0 4px 15px rgba(231, 229, 229, 0.5); /* Add shadow */
+}
+
+
+
+
+/* Navigation in header */
+.header nav {
+    display: flex;
+    justify-content: flex-end;
+    gap: 4rem;
+    margin-top: auto;
+    margin-top: 305px;
+    text-align: center;
+
+}
+  
+    
+
+.header nav a {
+    text-decoration: none;
+    color: white;
+    padding: 1.5rem 1.5rem;
+    border-radius: 10px;
+    font-size: 25px;
+    transition: background-color 2s;
+
+}
+
+.header nav a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    color: purple;
+    
+    
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+header, .sidebar, main, footer {
+    margin: 0;
+    padding: 0;
+}
+
+/* Sidebar styles */
+aside {
+    display: flex;
+    width: 225px;
+    grid-area: sidebar;
+    background: linear-gradient(to bottom, #44095e, #0b6aa9);
+    flex-direction: column;
+    padding: 1rem;
+    gap: 1rem;
+    height: 100%;
+    
+}
+
+aside a {
+    text-decoration: none;
+    color: white;
+    padding: 0.5rem;
+    border-radius: 5px;
+    text-align: center;
+    
+ 
+}
+
+aside a:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+
+
+main {
+   
+    display: flex; /* Enables Flexbox */
+    flex-wrap: wrap; /* Allows items to wrap to the next row */
+    justify-content: space-between; /* Distributes space between items */
+    padding: 1rem; /* Adds padding around the container */
+    color: white; /* Text color inside the container */
+    text-align: center; /* Centers text inside items */
+
+}
+
+.book {
+    background-color: #4CAF50; /* Green background for book items */
+    color: white; /* Text color */
+    padding: 1rem; /* Inner spacing for content */
+    margin: 0.5rem; /* Space between items */
+    width: calc(33.333% - 1rem); /* Three equal columns (adjusted for margin) */
+    box-sizing: border-box; /* Ensures padding/margin don't affect width */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+
+
+
+.thank-you{
+    display: grid;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    padding: 10rem;
+    
+}
+
+
+/* Individual book styles */
+section {
+    background: linear-gradient(to top, rgb(75, 58, 142),rgb(27, 4, 57));
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 1rem;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  
+}
+
+.categories {
+    list-style: none; /* Remove default bullets */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column; /* Align links vertically */
+    gap: 1rem; /* Add space between links */
+}
+
+.categories li a {
+    text-decoration: none; /* Remove underline */
+    color: white; /* Dark text */
+    font-size: 1.2rem;
+    padding: 0.5rem;
+    display: block;
+    transition: background-color 2s;
+}
+
+.categories li a:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 5px; /* Rounded edges */
+    color:purple;
+}
+
+
+
+/* Footer styles */
+.footer {
+    display: flex;
+    grid-area: footer;
+    background: linear-gradient(to left,#44095e, #0b6aa9);
+    justify-content: space-between; /* Center align content horizontally */
+    align-items: center; /* Center align content vertically */
+    color: white;
+    text-align: center;
+    padding: 3rem;
+    flex-wrap: wrap; 
+    font-size: 2; /* Adjust font size */
+}
+
+.contact {
+    display: flex;
+    flex-direction: column; /* Align items vertically */
+    gap: 0.5rem; /* Add space between items */
+}
+
+.contact ul {
+    list-style: none; /* Remove bullets */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+}
+
+
+
+.footer p {
+    margin: 0; /* Remove default margins */
+    text-align: center; /* Center-align text */
+}
+
+
+
+.book img {
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+    box-shadow: 15px 15px 15px rgba(231, 229, 229, 0.5); /* Add shadow */
+
+}
+
+
+button {
+    background-color: #007BFF; /* Green background */
+    color: white; /* White text */
+    border: none; /* Remove border */
+    font-size: 1.2rem; /* Adjust font size */
+    border-radius: 5px; /* Rounded corners */
+}
+
+button:hover {
+    background-color: skyblue; /* Darker green on hover */
+    cursor: pointer; /* Change cursor to pointer */
+}
+
+
+
+
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    position: absolute; /* Allows the logo to be positioned freely */
+    left: 30px; /* Moves the logo to the left edge of the header */
+    top: 60%; /* Vertically aligns the logo in the header */
+    transform: translateY(-50%); /* Centers the logo vertically */
+    
+    
+}
+
+
+/* Logo Circle */
+.logo-circle {
+    width: 150px;
+    height: 150px;
+    bottom: 10px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, #007BFF, #4CAF50);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+    position: relative;
+    right: -40px;
+    border: 1px solid white;
+    box-shadow: 0 4px 15px rgba(231, 229, 229, 0.5); /* Add shadow */
+    
+}
+
+/* Infinity Symbol */
+.infinity-wrapper {
+    position: relative;
+    width: 100px;
+    height: 50px;
+    
+    
+}
+
+.circle {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    border: 10px solid white;
+    border-radius: 50%;
+    background: brown;
+    
+
+    
+    
+}
+
+.circle1 {
+    position: absolute;
+    width: 35px;
+    height: 40px;
+    border-radius: 50%;
+    background:black;
+    
+
+    
+    
+}
+
+.circle1.left {
+    left: 5px;
+    bottom: -6px;
+}
+
+.circle1.right {
+    right: 5px;
+    bottom: -6px;
+}
+
+
+
+
+.circle.left {
+    left: -15px;
+}
+
+.circle.right {
+    right: -15px;
+}
+
+
+
+
+.circle.left {
+    left: -15px;
+}
+
+.circle.right {
+    right: -15px;
+}
+
+.connector {
+    position: absolute;
+    top: 50%;
+    left: 25%;
+    width: 50%;
+    height: 20px;
+    background: white;
+    transform: translateY(-50%);
+    z-index: -1;
+}
+
+/* Logo Text */
+.logo-text {
+    position: relative;
+    font-size: 2rem;
+    left:-160px;
+    bottom: -100px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 0 4px 15px rgba(231, 229, 229, 0.5); /* Add shadow */
+    
+}
+
+.logo-text span {
+    display: block;
+    font-size: 2rem;
+    color: rgb(25, 154, 152);
+    text-shadow: 0 4px 15px rgba(231, 229, 229, 0.5); /* Add shadow */
+}
+
+
+
+.infinity-symbol {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+
+.reflection1 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 8px;
+    left: 6px;
+}
+
+
+.reflection2 {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: white;
+    position: absolute;
+    top: 8px;
+    left: 80px;
+}
+
+
+.mouth {
+    position: absolute;
+    bottom: -45px;
+    right: 30px;
+    width: 30px;
+    height: 20px;
+    border-top: none;
+    border-radius: 0px 0px 50px 50px;
+    background: black;
+    border: 1px solid white ;
+}
+
+
+
+
+/* Graduation Hat */
+.graduation-hat {
+    position: absolute;
+    top: -120px; /* Adjust position above the logo circle */
+    left: -30%;
+    transform: translateX(-50%);
+
+
+}
+
+/* Hat Top (Sideways Cap) */
+
+.hat-top {
+    position: absolute;
+    top:18px;
+    width: 150px;
+    height: 80px;
+    background: black;
+    transform: rotate(-20deg);
+    border: 1px solid white;
+    box-shadow: 0 4px 15px rgba(231, 229, 229, 0.5); /* Add shadow */
+}
+
+.hat-body {
+    position: absolute;
+    width: 85px;
+    height: 80px;
+    background: black;
+    top: 30px;
+    left: 35px;
+    border: 1px solid white;
+}
+
+/* Tassel */
+.tassel {
+    position: absolute;
+    width: 5px;
+    height: 70px;
+    background: yellow;
+    top: 78px;
+    left: 140px;
+    border: 1px solid white;
+}
+
+
+
+
+
+
+
+
+.tassel::after {
+    content: "";
+    position: absolute;
+    
+
+}
+
+
+
+
+
+/* Responsive layout for smaller screens */
+@media (max-width: 1024px) {
+    .grid-container {
+        grid-template-areas:
+            "header"
+            "sidebar"
+            "main"
+            "footer";
+        grid-template-columns: 1fr; /* Stacked layout */
+    }
+    .sidebar {
+        height: auto;
+        width: 100%; /* Full width */
+        padding: 0.5rem;
+    }
+    .footer {
+        flex-direction: column; /* Stack items vertically on smaller screens */
+        text-align: center;
+    }
+
+
+    .categories {
+        flex-direction: row; /* Align items horizontally */
+        justify-content: space-around; /* Even spacing between items */
+    }
+}
+
+
