@@ -3,6 +3,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+
 }
 
 /* General Styling grid */
@@ -31,6 +32,7 @@ body {
     background: linear-gradient(to right, #44095e, #0b6aa9);
     color: white;
     text-shadow: 0 4px 15px rgba(231, 229, 229, 0.5);
+    font-size: 20px;
 }
 
 .nav{
@@ -58,6 +60,12 @@ body {
 }
 
 
+.filter-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr; /* Two equal sections side-by-side */
+      gap: 20px;
+      margin-top: 20px;
+    }
 
 
 
@@ -123,7 +131,7 @@ body {
 
 
 
-/* Book Container (Using CSS Grid for Layout) */
+/* Book Container main */
 .book-container {
     grid-area: main;
     display: grid;
@@ -152,7 +160,7 @@ body {
 }
 
 .book h2 {
-    font-size: 1.2rem;
+    font-size: 0.9rem;
     margin-top: 0.5rem;
     color: white;
     text-shadow: 0 4px 15px rgba(231, 229, 229, 0.5);
@@ -161,7 +169,7 @@ body {
 
 
 .book .author {
-    font-size: 0.9rem;
+    font-size: 1.1rem;
     color: white;
 }
 
@@ -250,9 +258,16 @@ body {
     
 }
 
+.summary{
+    font-size: 0.9rem;
+    font-weight: bold;
+    margin: 0.5rem 0;
+    color: white;
+}
+
 /* Author & Price Styling */
 .author {
-    font-size: 0.9rem;
+    font-size: 1.0rem;
     color: gray;
 }
 
@@ -353,10 +368,6 @@ body {
     border: 10px solid white;
     border-radius: 50%;
     background: brown;
-    
-
-    
-    
 }
 
 .circle1 {
