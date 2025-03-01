@@ -6,193 +6,82 @@
     <title>Online Bookstore</title>
     <link rel="stylesheet" href="style.css">
 </head>
-
-
 <body>
     <div class="container">
         <header class="header">
-            <section class="logo-container">
-                <!-- Logo Circle -->
-                <section class="logo-circle">
-                    <!-- Infinity Symbol -->
-                    <section class="infinity-wrapper">
-                        <!-- Graduation Hat -->
-                        <section class="graduation-hat">
-                            <section class="hat-body"></section>
-                            <section class="hat-top"></section>
-                            <section class="tassel"></section>
-                        </section>
+            <div class="logo-container">
+                <div class="logo-circle">
+                    <div class="infinity-wrapper">
+                        <div class="graduation-hat">
+                            <div class="hat-body"></div>
+                            <div class="hat-top"></div>
+                            <div class="tassel"></div>
+                        </div>
+                        <div class="circle left"></div>
+                        <div class="circle right"></div>
+                        <div class="circle1 left"></div>
+                        <div class="circle1 right"></div>
+                        <div class="connector"></div>
+                        <div class="mouth"></div>
+                        <div class="reflection1"></div>
+                        <div class="reflection2"></div>
+                    </div>
+                </div>
+                <div class="logo-text">
+                    Knowledge Infinity <span>Bookstore</span>
+                </div>
+            </div>
 
-                        <!-- Eyes and Mouth -->
-                        <section class="circle left"></section>
-                        <section class="circle right"></section>
-                        <section class="circle1 left"></section>
-                        <section class="circle1 right"></section>
-                        <section class="connector"></section>
-                        <section class="mouth"></section>
-                        
-                        <!-- Reflections -->
-                        <section class="reflection1"></section>
-                        <section class="reflection2"></section>
-                    </section>
-                </section>
+            <h1>Welcome to an infinity bookstore</h1>
 
-                <!-- Logo Text -->
-                <section class="logo-text">
-                    Knowlege Infinity <span>Bookstore</span>
-                </section>
-        
-        <h1>Welcome to an infinity bookstore</h1>
+            <nav class="nav">
+                <a href="basic_weebsite.html">Home</a>
+                <a href="basic_weebsite.html">Categories</a>
+                <a href="#">Contact</a>
+                <a href="cart.html">Cart</a>
+            </nav>
+        </header>
 
-    <nav class="nav">
-        <link><a href="basic_weebsite.html">Home</a></link>
-        <link><a href="basic_weebsite.html">Categories</a></link>
-        <link><a href="#">Contact</a></link>
-        <link><a href="cart.html">Cart</a></link>
-    </nav>
-</header>
+        <aside class="sidebar">
+            <ul class="categories">
+                <li><a href="#">Sport</a></li>
+                <li><a href="#">Adventure</a></li>
+                <li><a href="#">History</a></li>
+                <li><a href="#">Horror</a></li>
+                <li><a href="#">Fantasy</a></li>
+                <li><a href="#">Manga</a></li>
+            </ul>
+        </aside>
 
-<aside class="sidebar">
-    <ul class="categories">
-        <li><a href="#">Sport</a></li>
-        <li><a href="#">Adventure</a></li>
-        <li><a href="#">History</a></li>
-        <li><a href="#">Horror</a></li>
-        <li><a href="#">Fantasy</a></li>
-        <li><a href="#">Manga</a></li>
-    </ul>
-</aside>
+        <main class="book-container">
+            <div class="filter-sort-container">
+                <div class="filter-section">
+                    <h2>Books by Price</h2>
+                    <div class="book-grid">
+                        <div class="book">
+                            <img src="book1.png" alt="Harry Potter">
+                            <h3>Harry Potter</h3>
+                            <p class="summary">A boy that wants to be a wizard</p>
+                            <p class="author">J.K Rowling</p>
+                            <p class="price"><strong>1000€</strong></p>
+                            <a href="cart.html"><button>Add to Cart</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
 
-<main class="book-container">
-    <section class="filter-sort-container">
-        <!-- Books Sorted by Price -->
-        <section class="filter-section">
-            <h2>Books by Price</h2>
-            <section class="book-grid">
-                <section class="book">
-                    <img src="Screenshot 2025-01-30 at 13.39.24.png" alt="Book Title">
-                    <h3>Harry Potter</h3>
-                    <p class="summary">A boy that want to be a wizard </p>
-                    <p class="author">J.K Rowling</p>
-                    <p class="price"><strong>1000€</strong></p>
-                    <a href="cart.html"><button>Add to Cart</button></a>
-                </section>
-                
-                <section class="book">
-                    <img src="Screenshot 2025-01-30 at 13.39.24.png" alt="Book Title">
-                    <h3>Hunger Games</h3>
-                    <p class="summary">Fight for freedom</p>
-                    <p class="author">Suzanne Collins</p>
-                    <p class="price"><strong>999€</strong></p>
-                    <a href="cart.html"><button>Add to Cart</button></a>
-                </section>
-                
-                <section class="book">
-                    <img src="Screenshot 2025-01-30 at 13.39.24.png" alt="Book Title">
-                    <h3>Java</h3>
-                    <p class="summary">Everything about Java and how not to fail</p>
-                    <p class="author">Java Master</p>
-                    <p class="price"><strong>700€</strong></p>
-                    <a href="cart.html"><button>Add to Cart</button></a>
-                </section>
-                
-                <section class="book">
-                    <img src="Screenshot 2025-01-30 at 13.39.24.png" alt="Book Title">
-                    <h3>Python</h3>
-                    <p class="summary">Everything that you should know about Python</p>
-                    <p class="author">Python Master</p>
-                    <p class="price"><strong>800€</strong></p>
-                    <a href="cart.html"><button>Add to Cart</button></a>
-                </section>
-
-                <section class="book">
-                    <img src="Screenshot 2025-01-30 at 13.39.24.png" alt="Book Title">
-                    <h3>Pokemon</h3>
-                    <p class="summary">A pokemon master that needs to catch them all</p>
-                    <p class="author">Satoshi Tajiri</p>
-                    <p class="price"><strong>600€</strong></p>
-                    <a href="cart.html"><button>Add to Cart</button></a>
-                </section>
-    
-
-                <section class="book">
-                    <img src="Screenshot 2025-01-30 at 13.39.24.png" alt="Book Title">
-                    <h3>Programming</h3>
-                    <p class = "summary"> Everything that you should know about coding</p>
-                    <p class="author">Programming Master</p>
-                    <p class="price"><strong>500€</strong></p>
-                    <a href="cart.html"><button>Add to Cart</button></a>
-                </section>
-            </section>
-        </section>
-                    
-        
-        <!-- Books Sorted by Author -->
-        <section class="filter-section">
-            <h2>Books by Author</h2>
-            <section class="book-grid">
-                <section class="book">
-                    <img src="Screenshot 2025-01-30 at 13.39.24.png" alt="Book Title">
-                    <h3>Harry Potter</h3>
-                    <p class="summary">A boy that want to be a wizard </p>
-                    <p class="author">Author A</p>
-                    <p class="price"><strong>60€</strong></p>
-                    <a href="cart.html"><button>Add to Cart</button></a>
-                </section>
-
-                <section class="book">
-                    <img src="Screenshot 2025-01-30 at 13.39.24.png" alt="Book Title">
-                    <h3>Hunger Games</h3>
-                    <p class="summary">A Girl that fights for freedom</p>
-                    <p class="author">Author B</p>
-                    <p class="price"><strong>666€</strong></p>
-                    <a href="cart.html"><button>Add to Cart</button></a>
-                </section>
-
-                <section class="book">
-                    <img src="Screenshot 2025-01-30 at 13.39.24.png" alt="Book Title">
-                    <h3>Pokemon</h3>
-                    <p class="summary">A pokemon master that needs to catch them all</p>
-                    <p class="author">Author C</p>
-                    <p class="price"><strong>1000€</strong></p>
-                    <a href="cart.html"><button>Add to Cart</button></a>
-                </section>
-                
-                <section class="book">
-                    <img src="Screenshot 2025-01-30 at 13.39.24.png" alt="Book Title">
-                    <h3>Programming</h3>
-                    <p class = "summary"> Everything that you should know about coding</p>
-                    <p class="author">Author D</p>
-                    <p class="price"><strong>999€</strong></p>
-                    <a href="cart.html"><button>Add to Cart</button></a>
-                </section>
-                
-                <section class="book">
-                    <img src="Screenshot 2025-01-30 at 13.39.24.png" alt="Book Title">
-                    <h3>Java</h3>
-                    <p class="summary">Everything about Java and how not to fail</p>
-                    <p class="author">Author E</p>
-                    <p class="price"><strong>600€</strong></p>
-                    <a href="cart.html"><button>Add to Cart</button></a>
-                </section>
-            </section>
-        </section>
-    </section>
-</main>
-    
-
-<footer class="footer">
-    <section class="contact-details">
-        <p>Contact Us:</p>
-        <ul>
-            <li>Email: <a href="chrismymail@yahoo.com">chrismymail@yahoo.com</a></li>
-            <li>Phone: <a href="tel:+123456789">+123-456-789</a></li>
-            <li>Address: 123 Infinity Book Road, Kristianstad, HKR 123</li>
-        </ul>
-    </section>
-    <p>&copy; 2025 Online Bookstore. No Copyrights allowed.</p>
-</footer>
-</div>
+        <footer class="footer">
+            <div class="contact-details">
+                <p>Contact Us:</p>
+                <ul>
+                    <li>Email: <a href="mailto:chrismymail@yahoo.com">chrismymail@yahoo.com</a></li>
+                    <li>Phone: <a href="tel:+123456789">+123-456-789</a></li>
+                    <li>Address: 123 Infinity Book Road, Kristianstad, HKR 123</li>
+                </ul>
+            </div>
+            <p>&copy; 2025 Online Bookstore. No Copyrights allowed.</p>
+        </footer>
+    </div>
 </body>
 </html>
- 
